@@ -8,5 +8,5 @@ import lombok.Setter;
 public class ScoreMessage {
     private String playerName;
     private long score;
-    private String custId;
+    private String userId;
 }

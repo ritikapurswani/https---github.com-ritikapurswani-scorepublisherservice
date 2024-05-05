@@ -16374,3 +16374,11 @@ Consider the following:
 	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
 	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
 
+2024-05-06 00:24:27 [main] INFO  c.e.S.ScorePublisherServiceApplication - Starting ScorePublisherServiceApplication using Java 1.8.0_202 on 197NODMB29285 with PID 53459 (/Users/ritikapurswani/Downloads/ScorePublisherService/target/classes started by ritikapurswani in /Users/ritikapurswani/Downloads/ScorePublisherService)
+2024-05-06 00:24:27 [main] INFO  c.e.S.ScorePublisherServiceApplication - No active profile set, falling back to default profiles: default
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 0 JPA repository interfaces.
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-06 00:24:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.

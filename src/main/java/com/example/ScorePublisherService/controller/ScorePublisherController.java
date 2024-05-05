@@ -38,7 +38,7 @@ public class ScorePublisherController {
 
             scoreProducer.sendMessage(message);
 
-            return ResponseEntity.ok("Score published successfully to Kafka topic.");
+            return ResponseEntity.ok("Score saved successfully");
         } catch (IllegalArgumentException e) {
             LOGGER.error("Validation failed: {}", e.getMessage());
             return ResponseEntity.badRequest().body(e.getMessage());
@@ -49,7 +49,7 @@ public class ScorePublisherController {
         } catch (Exception e) {
             LOGGER.error("Error occurred in publishing score to Kafka topic: {}", e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                    .body("Failed to publish score to Kafka topic: " + e.getMessage());
+                    .body("Failed to save score: " + e.getMessage());
         }
     }
 }
