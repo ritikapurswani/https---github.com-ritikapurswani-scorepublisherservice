@@ -30,8 +30,10 @@ public class ScorePublisherController {
     public ResponseEntity<String> publishScore(@RequestBody ScoreMessage scoreMessage) {
         try {
             LOGGER.info("Received score message: {}", scoreMessage);
-            if (ValidationUtil.isNullOrEmpty(scoreMessage.getPlayerName()) || !ValidationUtil.isPositiveInteger(scoreMessage.getScore())) {
-                return ResponseEntity.badRequest().body("Invalid player name or score value.");
+            if (ValidationUtil.isNullOrEmpty(scoreMessage.getPlayerName()) ||
+                    !ValidationUtil.isPositiveInteger(scoreMessage.getScore())
+                    || ValidationUtil.isNullOrEmpty(scoreMessage.getUserId())) {
+                return ResponseEntity.badRequest().body("Invalid player name, score value or user id");
             }
 
             String message = objectMapper.writeValueAsString(scoreMessage);
